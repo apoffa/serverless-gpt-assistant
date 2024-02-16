@@ -1,0 +1,49 @@
+{
+  "name": "serverless-gpt-assistant",
+  "version": "0.0.1",
+  "description": "This is a starting project for creating a serverless assistant using GPT-4, API Gateway, AWS Lambda, SQS, and DynamoDB",
+  "main": "serverless.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "sls package --stage dev",
+    "deploy:dev": "sls deploy --stage dev"
+  },
+  "engines": {
+    "node": ">=18.17.1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-apigatewaymanagementapi": "^3.478.0",
+    "@aws-sdk/client-dynamodb": "^3.385.0",
+    "@aws-sdk/client-lambda": "^3.387.0",
+    "@aws-sdk/client-sqs": "^3.485.0",
+    "@aws-sdk/util-dynamodb": "^3.385.0",
+    "@middy/core": "^3.4.0",
+    "@middy/http-json-body-parser": "^3.4.0",
+    "@middy/input-output-logger": "^4.5.5",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "jwk-to-pem": "^2.0.5",
+    "luxon": "^3.3.0",
+    "minimist": "^1.2.8",
+    "openai": "^4.23.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@serverless/typescript": "^3.0.0",
+    "@types/aws-lambda": "^8.10.71",
+    "@types/luxon": "^3.3.2",
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^18.0.0",
+    "@types/uuid": "^9.0.4",
+    "esbuild": "^0.14.11",
+    "serverless": "^3.0.0",
+    "serverless-esbuild": "^1.23.3",
+    "serverless-lift": "^1.28.1",
+    "serverless-plugin-log-retention": "^2.0.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.7.4"
+  },
+  "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
+  "license": "MIT"
+}
